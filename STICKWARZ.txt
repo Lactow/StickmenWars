@@ -1,0 +1,70 @@
+﻿STICK WARS
+
+Intro:
+"Les stickmen sont des ninjas ancestraux qui ont appris à se battre dans le temple de la Galaxie. 
+Ce temple fut attaqué par des raptors volants et depuis, une malédiction s'est abattue sur eux. 
+Cette malédiction les pousse à se battre entre eux jusqu'au dernier. Seul le dernier pourra sauver 
+le savoir précieux des stickmen de la galaxie, et devenir le nouveau Stickman divin...
+Incarnez un stickman, et battez-vous pour devenir le Grand Stickman !"
+
+
+
+
+Au lancement du jeu, il faut attendre que l'arène se remplisse de 8 bots.
+
+Une fois l'arène le combat commence. 
+Le but sera d'être le dernier survivant. 
+L'arène se déroule sur une grille de 24x24 cases et les bots sont placés aléatoirement dessus.
+Il y a entre 1 et 3 armes qui apparaitront sur la grille. 
+Il y aura entre 4 et 5 potions qui apparaitront sur la grille.
+
+Les armes, si le tir est réusssi, tuent en un coup. 
+Les potions régénèrent toute la vie d'un bot.
+
+Les stickmen peuvent ramasser des objets après avoir fouillé leur case.
+
+Le jeu se déroule tour par tour, chacun des huit bots joue l'un après l'autre.
+
+Chaque stickman a 5 Points d'Action par tour à dispatcher dans les actions suivantes:
+
+une seule fois une attaque OU une seule fois une défense; 
+un à trois déplacements;
+une fois une fouille du regard; 
+une fois un ramassage. 
+
+Les points seront sauvegardés par partie et le résultat affiché sur la page d'accueil. 
+Les arènes sont rejointes automatiquement et les joueurs sont placés aléatoirement.
+
+---------------------------------------
+
+Déroulement d'un tour de jeu : 
+
+1- à l'arrivée des joueurs/bots : définition de l'ordre du tour de jeu : le premier arrivé jouera en premier.
+
+2- chaque bot joue son tour comme défini par le joueur.
+
+3- Chaque bot qui meurt quitte l'arène. 
+
+4- L'arène reste bloquée jusqu'au dernier bot.
+
+5- A chaque joueur qui quitte la partie, son score est automatiquement sauvegardé dans son compte.
+
+6- Le bot qui quitte une arène a le droit de joindre une autre arène. 
+Un bot n'a pas le droit de quitter une 
+arène s'il est encore en vie ou n'est pas déconnecté. 
+Un joueur qui se déconnecte alors que son bot est en cours de partie n'a pas d'incidence sur la partie. 
+Le bot ne joindra pas d'autre arène tant que le joueur ne l'a pas décidé.
+
+7- S'il n'y a pas de script définissant un bot, le joueur ne peut pas lancer de combat.
+Le script doit être enregistré et ne peut pas être modifié en cours de combat. 
+Si un script est enregistré pendant un combat de bots, il prendra effet au prochain combat.
+
+----------------------------------------
+
+Un joueur doit s'inscrire avant de pouvoir jouer. 
+Une personne arrivant sur le site peut consulter les dernières nouvelles du sites sur le blog (page d'accueil)
+et consulter les scores des dernières parties (page d'accueil).
+
+Un joueur doit définir un script avant de pouvoir jouer. Si le script n'est pas existant, aucun bot n'est créé.
+Un joueur ne peut avoir qu'un seul bot.Un bot n'appartient qu'à un joueur.
+
