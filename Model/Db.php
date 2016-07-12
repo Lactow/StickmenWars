@@ -1,0 +1,6 @@
+<?php
+
+/* 
+ * DataBase connection
+ */
+
