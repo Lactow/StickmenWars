@@ -34,7 +34,7 @@ if(isset($_GET['link']))
 			$link = new NewsAdmin();
 			break;
 		case 'home' :
-			require('./Controllers/Acceuilcontroller.php');
+			require('./Controllers/Homecontroller.php');
 			$link = new Home();
 			break;
 		case 'signup' :
@@ -74,7 +74,5 @@ if(isset($_SESSION['login'])){
 } else {
 	include('./views/MenuHomeView.html');
 }
-
 include('./views/BodyView.php');
 include('./views/FooterView.html');
-?>
