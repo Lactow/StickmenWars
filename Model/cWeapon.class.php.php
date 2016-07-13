@@ -1,0 +1,33 @@
+<?php
+
+
+/**
+ *
+ */
+class cWeapon
+{
+	/**
+	 *
+	 */
+	public function __construct()
+	{
+	}
+
+	/**
+	 * @var integer
+	 */
+	public $idWeapon;
+
+	/**
+	 * @var integer
+	 */
+	public $iDamage;
+
+	/**
+	 * @param void $idStickman
+	 */
+	public function shot($idStickman):void
+	{
+		// TODO: implement here
+	}
+}
