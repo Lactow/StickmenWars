@@ -16,12 +16,12 @@ class cShop
     /**
      * @var void
      */
-    public $aovItems Weapons;
+    public aovItems $Weapons;
 
     /**
      * @var void
      */
-    public $aovItems Weed;
+    public $aovItems$ Weed;
 
     /**
      * @var void
@@ -31,7 +31,7 @@ class cShop
     /**
      *
      */
-    public function Buy():void
+    public function Buy()
     {
         // TODO: implement here
     }
