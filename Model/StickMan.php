@@ -1,8 +1,7 @@
 <?php
 
 /**
- * This class implements all methods for discussing with the API
- * and instantiate StickMen
+ * le stickman peut move, fight, look, protect,leave, died, grabItem,  
  *
  * @author lactor
  */
@@ -13,7 +12,10 @@ class StickMan {
     protected $attributes;
     protected $actionPoints;
     protected $movePoints;
+    protected  $posX;
+    protected $posY;
     
+            
     
     
     function getStickman($idStickman){
@@ -62,6 +64,26 @@ class StickMan {
     function setMovePoints(){
         
     }
+    
+    //return current position of stickman
+    function getPosition($x,$y){
+        
+    }
+    
+    function walkX(){
+        //this will parse arena horizontally and save when find a stickman or an item
+    }
+    function walkY(){
+        //this will parse arena vertically and save when find a stickman or an item
+    }
+    
+    function grab(){
+        
+    }
+    
+    
+    
+    
 
     
     
