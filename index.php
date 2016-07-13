@@ -3,10 +3,23 @@
 session_start();
 ob_start();
 
-//var_dump($_GET['link'],$_GET['a']);
+const EN_PROD = false;
 
+//Require files
 require('./Controllers/ViewController.php');
 
+
+//Twig init
+require_once ('./lib/Twig/Autoloader.php') ;
+Twig_Autoloader::register();
+$twigConf = array();
+if(EN_PROD) {
+  $twigConf['cache'] = '/cache';
+}
+$loader = new Twig_Loader_Filesystem('./templates');
+$twig = new Twig_Environment($loader, $twigConf);
+
+//Default Url Index & Action
 $link  = new Index();
 $action = 1;
 
@@ -18,7 +31,7 @@ if(isset($_GET['link']))
 		break;
 		case 'news-admin' :
 			require('./Controllers/NewsAdminController.php');
-			$link = new ();
+			$link = new NewsAdmin();
 			break;
 		case 'home' :
 			require('./Controllers/Acceuilcontroller.php');
@@ -48,15 +61,20 @@ if(isset($_GET['link']))
 			break;
 	}
 }
+
 if(isset($_GET['a'])) $action = (int)$_GET['a'];
 $link->doAction($action);
 $contentPage = ob_get_contents();
 ob_end_clean();
 
+include('./views/HeaderView.html');
 
-include('./view/HeaderView.html');
-include('./view/MenuView.html');
-//echo $contentPage;
-echo '<div id="content">'.$contentPage.'</div>';
-include('./view/FooterView.html');
+if(isset($_SESSION['login'])){
+	include('./views/MenuUserView.html');
+} else {
+	include('./views/MenuHomeView.html');
+}
+
+include('./views/BodyView.php');
+include('./views/FooterView.html');
 ?>
