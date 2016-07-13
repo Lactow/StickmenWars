@@ -18,10 +18,10 @@ if(isset($_GET['link']))
 		break;
 		case 'news-admin' :
 			require('./Controllers/NewsAdminController.php');
-			$link = new ();
+			$link = new adminNews();
 			break;
 		case 'home' :
-			require('./Controllers/Acceuilcontroller.php');
+			require('./Controllers/Accueilcontroller.php');
 			$link = new Home();
 			break;
 		case 'signup' :
@@ -59,4 +59,4 @@ include('./view/MenuView.html');
 //echo $contentPage;
 echo '<div id="content">'.$contentPage.'</div>';
 include('./view/FooterView.html');
-?>
+
