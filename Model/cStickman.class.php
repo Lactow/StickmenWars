@@ -56,7 +56,7 @@ class cStickman
 	/**
 	 * @param void $int x; int y
 	 */
-	public function move($int x; int y):void
+	public function move($x,$y)
 	{
 		// TODO: implement here
 	}
@@ -64,7 +64,7 @@ class cStickman
 	/**
 	 *
 	 */
-	public function look():void
+	public function look()
 	{
 		// TODO: implement here
 	}
@@ -72,7 +72,7 @@ class cStickman
 	/**
 	 *
 	 */
-	public function protect():void
+	public function protect()
 	{
 		// TODO: implement here
 	}
@@ -80,7 +80,7 @@ class cStickman
 	/**
 	 * @param void $int idStickman
 	 */
-	public function attack($int idStickman):void
+	public function attack($idStickman)
 	{
 		// TODO: implement here
 	}
@@ -88,7 +88,7 @@ class cStickman
 	/**
 	 * @param void $int idItem
 	 */
-	public function grab($int idItem):void
+	public function grab($idItem)
 	{
 		// TODO: implement here
 	}
@@ -96,7 +96,7 @@ class cStickman
 	/**
 	 * @param void $int idItem
 	 */
-	public function use($int idItem):void
+	public function useItems($idItem)
 	{
 		// TODO: implement here
 	}
@@ -104,7 +104,7 @@ class cStickman
 	/**
 	 *
 	 */
-	public function leave():void
+	public function leave()
 	{
 		// TODO: implement here
 	}
@@ -112,7 +112,7 @@ class cStickman
 	/**
 	 *
 	 */
-	private function imDying():void
+	private function imDying()
 	{
 		// TODO: implement here
 	}
@@ -120,7 +120,7 @@ class cStickman
 	/**
 	 *
 	 */
-	public function getPos():void
+	public function getPos()
 	{
 		// TODO: implement here
 	}

@@ -1,7 +1,7 @@
 <?php
 
 
-/**
+/**An interface implements methods and not variables
  *
  */
 interface vItems
@@ -9,15 +9,15 @@ interface vItems
 	/**
 	 * @var string
 	 */
-	public $sName;
+	//public $sName;
 
 	/**
 	 * @var integer
 	 */
-	public $iPrice;
+	//public $iPrice;
 
 	/**
 	 * @var enum{weapon; potion}
 	 */
-	public $eType;
+	//public $eType;
 }

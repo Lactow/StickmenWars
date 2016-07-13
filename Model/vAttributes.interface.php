@@ -1,7 +1,7 @@
 <?php
 
 
-/**
+/**An interface implements methods and not variables
  *
  */
 interface vAttributes
@@ -9,25 +9,25 @@ interface vAttributes
 	/**
 	 * @var integer
 	 */
-	public $iCurrent;
+	//public $iCurrent;
 
 	/**
 	 * @var integer
 	 */
-	public $iInit;
+	//public $iInit;
 
 	/**
 	 * @var integer
 	 */
-	public $iMax;
+	//public $iMax;
 
 	/**
 	 * @var integer
 	 */
-	public $iMin;
+	//public $iMin;
 
 	/**
 	 * @var enum{strength; life}
 	 */
-	public $eType;
+	//public $eType;
 }

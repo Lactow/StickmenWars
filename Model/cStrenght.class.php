@@ -16,7 +16,7 @@ class cStrenght
 	/**
 	 *
 	 */
-	public function proteinShot():void
+	public function proteinShot()
 	{
 		// TODO: implement here
 	}
@@ -24,7 +24,7 @@ class cStrenght
 	/**
 	 *
 	 */
-	public function anemia():void
+	public function anemia()
 	{
 		// TODO: implement here
 	}

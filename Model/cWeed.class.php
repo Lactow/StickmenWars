@@ -26,7 +26,7 @@ class cWeed
 	/**
 	 *
 	 */
-	public function bong():void
+	public function bong()
 	{
 		// TODO: implement here
 	}

@@ -26,7 +26,7 @@ class cWeapon
 	/**
 	 * @param void $idStickman
 	 */
-	public function shot($idStickman):void
+	public function shot($idStickman)
 	{
 		// TODO: implement here
 	}

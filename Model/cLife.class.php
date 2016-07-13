@@ -16,7 +16,7 @@ class cLife
 	/**
 	 *
 	 */
-	public function getStone():void
+	public function getStone()
 	{
 		// TODO: implement here
 	}
@@ -24,7 +24,7 @@ class cLife
 	/**
 	 *
 	 */
-	public function getBored():void
+	public function getBored()
 	{
 		// TODO: implement here
 	}

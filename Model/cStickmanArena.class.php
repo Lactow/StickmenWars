@@ -41,7 +41,7 @@ class cStickmanArena
 	/**
 	 *
 	 */
-	public function SpawnStickmen():void
+	public function SpawnStickmen()
 	{
 		// TODO: implement here
 	}
@@ -49,7 +49,7 @@ class cStickmanArena
 	/**
 	 *
 	 */
-	public function SpawnItems():void
+	public function SpawnItems()
 	{
 		// TODO: implement here
 	}
@@ -57,7 +57,7 @@ class cStickmanArena
 	/**
 	 *
 	 */
-	public function getMaxWeaponStrength():void
+	public function getMaxWeaponStrength()
 	{
 		// TODO: implement here
 	}
@@ -65,7 +65,7 @@ class cStickmanArena
 	/**
 	 *
 	 */
-	public function isFull():void
+	public function isFull()
 	{
 		// TODO: implement here
 	}

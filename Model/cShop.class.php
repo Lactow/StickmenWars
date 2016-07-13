@@ -14,25 +14,25 @@ class cShop
 	}
 
 	/**
-	 * @var array of virtual
+	 * @var array of virtual weapons
 	 */
-	public $aovItems Weapons;
+	public $aovItems;
 
 	/**
-	 * @var array of virtual
+	 * @var array of virtual items
 	 */
-	public $aovItems Weed;
+	public $aovItems ;
 
 	/**
-	 * @var array of virtual
+	 * @var array of virtual attributes
 	 */
-	public $aovAttributes Attributes;
+	public $aovAttributes;
 
 	/**
 	 *
 	 */
-	public function Buy():void
+	public function Buy()
 	{
-		// TODO: implement here
+		
 	}
 }
