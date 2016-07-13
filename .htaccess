@@ -1,0 +1,22 @@
+
+#Redirection Url home
+RewriteRule home.htm$ index.php?link=home&a=1  [L]
+
+#Redirection Url news-admin
+RewriteRule news-admin.htm$ index.php?link=news-admin&a=1  [L]
+
+#Redirection Url signup
+RewriteRule signup.htm$ index.php?link=signup&a=1  [L]
+
+#Redirection Url connection
+RewriteRule login.htm$ index.php?link=connection&a=1  [L]
+RewriteRule logout.htm$ index.php?link=connection&a=2 [L]
+
+#Redirection Url script
+RewriteRule script.htm$ index.php?link=script&a=1  [L]
+
+#Redirection Url shop
+RewriteRule shop.htm$ index.php?link=shop&a=1  [L]
+
+#Redirection Url fight
+RewriteRule fight.htm$ index.php?link=fight&a=1  [L]
