@@ -37,8 +37,9 @@ class StickMan {
         return $this->inventoryItems;
     }
     
-    function setInventory(){
-        
+    function setInventory($newInventory){
+        //call this one whenever a new item is added or removed
+
     }
     
     function getAttributes($idStickman){
@@ -46,7 +47,7 @@ class StickMan {
     }
     
     function setAttributes(){
-        
+        //life or strength
     }
     
     function getActionPoints($idStickman){
@@ -67,6 +68,8 @@ class StickMan {
     
     //return current position of stickman
     function getPosition($x,$y){
+        $x->posX;
+        $y->poxY;
         
     }
     
@@ -86,8 +89,14 @@ class StickMan {
         return $newY;
     }
     
-    function grab(){
+    function grab($item){
         //take item
+      
+      $newInventory = $this->getInventory($inventoryItems);
+      array_push($item, $inventory);
+      $this->setInventory($newInventory);
+      return $inventory;
+       
     }
     
     
