@@ -6,7 +6,7 @@ ob_start();
 const EN_PROD = false;
 
 //Require files
-require('./Controllers/ViewController.php');
+require('./Controllers/HomeController.php');
 
 
 //Twig init
@@ -16,7 +16,7 @@ $twigConf = array();
 if(EN_PROD) {
   $twigConf['cache'] = '/cache';
 }
-$loader = new Twig_Loader_Filesystem('./templates');
+$loader = new Twig_Loader_Filesystem('./Views');
 $twig = new Twig_Environment($loader, $twigConf);
 
 //Default Url Index & Action
@@ -70,9 +70,9 @@ ob_end_clean();
 include('./views/HeaderView.html');
 
 if(isset($_SESSION['login'])){
-	include('./views/MenuUserView.html');
+	include('./Views/MenuUserView.html');
 } else {
-	include('./views/MenuHomeView.html');
+	include('./Views/MenuHomeView.html');
 }
-include('./views/BodyView.php');
-include('./views/FooterView.html');
+include('./Views/BodyView.php');
+include('./Views/FooterView.html');
