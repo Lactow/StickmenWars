@@ -1,4 +1,12 @@
+*{
+    margin:0;
+    padding:0;
+}
 
 .modal-footer {   
-	border-top: 0px; 
+    border-top: 0px; 
+}
+#footer{
+    width:15rem;
+    margin:0 auto;
 }

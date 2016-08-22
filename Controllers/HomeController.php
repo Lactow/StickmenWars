@@ -13,7 +13,7 @@ class Home{
 
     public function displayHome(){
         ?>
-        <h1>Bienvenue !</h1>
+        <h1>Bienvenue au Home!</h1>
         <?php
     }
 }

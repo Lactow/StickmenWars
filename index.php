@@ -5,9 +5,6 @@ ob_start();
 
 const EN_PROD = false;
 
-//Require files
-//require('./Controllers/HomeController.php');
-
 
 //Twig init
 require_once ('./lib/Twig/Autoloader.php') ;
@@ -25,41 +22,41 @@ $action = 1;
 
 if(isset($_GET['link']))
 {
-	switch($_GET['link'])
-	{
-		case 'news-admin' :
-			require('./Controllers/NewsAdminController.php');
-			$link = new NewsAdmin();
-			break;
-		case 'home' :
-			require('./Controllers/HomeController.php');
-			$link = new Home();
-			break;
-		case 'signup' :
-			require('./Controllers/SignUpController.php');
-			$link = new Signup();
-			break;
-		case 'connection' :
-			require('./Controllers/ConnectionController.php');
-			$link = new Connection();
-			break;
-		case 'script' :
-			require('./Controllers/ScriptController.php');
-			$link = new Script();
-			break;
-		case 'shop' :
-			require('./Controllers/ShopController.php');
-			$link = new Shop();
-			break;
-		case 'fight' :
-			require('./Controllers/FightController.php');
-			$link = new Fight();
-			break;
-		default :
-                        require('./Controllers/HomeController.php');
-			$link = new Home();
-			break;
-	}
+    switch($_GET['link'])
+    {
+            case 'news-admin' :
+                    require('./Controllers/NewsAdminController.php');
+                    $link = new NewsAdmin();
+                    break;
+            case 'home' :
+                    require('./Controllers/HomeController.php');
+                    $link = new Home();
+                    break;
+            case 'signup' :
+                    require('./Controllers/SignUpController.php');
+                    $link = new Signup();
+                    break;
+            case 'connection' :
+                    require('./Controllers/ConnectionController.php');
+                    $link = new Connection();
+                    break;
+            case 'script' :
+                    require('./Controllers/ScriptController.php');
+                    $link = new Script();
+                    break;
+            case 'shop' :
+                    require('./Controllers/ShopController.php');
+                    $link = new Shop();
+                    break;
+            case 'fight' :
+                    require('./Controllers/FightController.php');
+                    $link = new Fight();
+                    break;
+            default :
+                    require('./Controllers/HomeController.php');
+                    $link = new Home();
+                    break;
+    }
 }
 
 if(isset($_GET['a'])) $action = (int)$_GET['a'];
@@ -67,12 +64,8 @@ $link->doAction($action);
 $contentPage = ob_get_contents();
 ob_end_clean();
 
-include('./views/HeaderView.html');
 
-if(isset($_SESSION['login'])){
-	include('./Views/MenuUserView.html');
-} else {
-	include('./Views/MenuHomeView.html');
-}
-include('./Views/BodyView.php');
-include('./Views/FooterView.html');
+//$contentPage display page
+include('./Views/ViewContent.php');
+
+
