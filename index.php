@@ -6,7 +6,7 @@ ob_start();
 const EN_PROD = false;
 
 //Require files
-require('./Controllers/HomeController.php');
+require('./Controllers/ViewController.php');
 
 
 //Twig init
