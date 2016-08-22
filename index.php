@@ -6,7 +6,7 @@ ob_start();
 const EN_PROD = false;
 
 //Require files
-require('./Controllers/ViewController.php');
+//require('./Controllers/HomeController.php');
 
 
 //Twig init
@@ -20,21 +20,19 @@ $loader = new Twig_Loader_Filesystem('./Views');
 $twig = new Twig_Environment($loader, $twigConf);
 
 //Default Url Index & Action
-$link  = new Index();
+$link  = '';
 $action = 1;
 
 if(isset($_GET['link']))
 {
 	switch($_GET['link'])
 	{
-		case 1 :
-		break;
 		case 'news-admin' :
 			require('./Controllers/NewsAdminController.php');
 			$link = new NewsAdmin();
 			break;
 		case 'home' :
-			require('./Controllers/Homecontroller.php');
+			require('./Controllers/HomeController.php');
 			$link = new Home();
 			break;
 		case 'signup' :
@@ -58,6 +56,8 @@ if(isset($_GET['link']))
 			$link = new Fight();
 			break;
 		default :
+                        require('./Controllers/HomeController.php');
+			$link = new Home();
 			break;
 	}
 }

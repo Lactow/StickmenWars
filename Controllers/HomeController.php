@@ -1,8 +1,19 @@
 <?php
+class Home{
+    public function __construct(){
+    }
+    //@TODO
+    public function doAction($action){
+        switch($action){
+            case 1 :
+                $this->displayHome();
+                break;
+        }
+    }
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
+    public function displayHome(){
+        ?>
+        <h1>Bienvenue !</h1>
+        <?php
+    }
+}
