@@ -70,15 +70,24 @@ class StickMan {
         
     }
     
-    function walkX(){
+    function walkX($n){
         //this will parse arena horizontally and save when find a stickman or an item
+        $oldX = $this->posX;
+
+        $newX = $oldX+$n;
+        
+        return $newX;
+        
     }
-    function walkY(){
+    function walkY($n){
         //this will parse arena vertically and save when find a stickman or an item
+        $oldY = $this->posY;
+        $newY = $oldY+$n;
+        return $newY;
     }
     
     function grab(){
-        
+        //take item
     }
     
     

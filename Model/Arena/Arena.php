@@ -13,5 +13,15 @@
  * @author lactor
  */
 class Arena {
+    private $idArena;
+    public $sizeRoom;
+    public $itemMax;
     
+    private function createArena(){
+        //instanciate arena with id and size;
+    }
+    
+    private function deleteArena(){
+        //destroy when : stickmen = 0 || null
+    }
 }

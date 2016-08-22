@@ -1,13 +1,15 @@
 <?php
-
-
 /**
  *
  */
 class cCell
 {
 	/**
-	 *
+	 * class Cell : 
+         * to detect cells, what is on,
+         * items
+         * stickman
+         * 
 	 */
 	public function __construct()
 	{
@@ -32,4 +34,13 @@ class cCell
 	 * @var Array object
 	 */
 	public $aoStickmen;
+        
+        public function getY(){
+            return $this->iPosY;
+        }
+        
+        public function getX() {
+            return $this->iPosX;
+        }
+
 }

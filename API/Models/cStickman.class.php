@@ -2,7 +2,7 @@
 
 
 /**
- *
+ * class Stickman
  */
 class cStickman
 {
@@ -122,6 +122,6 @@ class cStickman
 	 */
 	public function getPos()
 	{
-		// TODO: implement here
+		// TODO: implement here : know x and y from cell from arena
 	}
 }

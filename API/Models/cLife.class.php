@@ -7,7 +7,7 @@
 class cLife
 {
 	/**
-	 *
+	 * class Life
 	 */
 	public function __construct()
 	{
@@ -18,7 +18,7 @@ class cLife
 	 */
 	public function getStone()
 	{
-		// TODO: implement here
+		// TODO: implement here : life ++
 	}
 
 	/**
@@ -26,6 +26,6 @@ class cLife
 	 */
 	public function getBored()
 	{
-		// TODO: implement here
+		// TODO: implement here : life --
 	}
 }

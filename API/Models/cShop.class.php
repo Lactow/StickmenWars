@@ -2,7 +2,7 @@
 
 
 /**
- *
+ * class shop
  */
 class cShop
 {
@@ -35,4 +35,8 @@ class cShop
 	{
 		
 	}
+        
+        public function Sell(){
+            
+        }
 }

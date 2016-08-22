@@ -2,7 +2,7 @@
 
 
 /**
- *
+ * class Arena
  */
 class cStickmanArena
 {
@@ -44,6 +44,7 @@ class cStickmanArena
 	public function SpawnStickmen()
 	{
 		// TODO: implement here
+            $stick = new StickMan();
 	}
 
 	/**
