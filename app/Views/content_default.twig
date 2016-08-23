@@ -1,10 +1,13 @@
 {# empty Twig template #}
-<aside>
-    <div class="aside">
+{% extends "gencontent.html" %}
+
+{% block content %}
+<div>
+        <h3> News du jeu </h3>
         <ul id="informations">
         {% for item in news %}
             <li><a href="{{ item.href }}">{{ item.caption }}</a></li>
         {% endfor %}
         </ul>
     </div>
-</aside>
+{% endblock %}

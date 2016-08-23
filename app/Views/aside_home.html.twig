@@ -1,0 +1,23 @@
+{# aside for home, authentified or not, aside #}
+{% extends "gencontent.html" %}
+
+{% block aside %}
+    <div class="connexion">
+        <ul>
+            <li><a href="LoginView.html">Connexion</a></li>
+            <li><a href="LoginView.html">Cr&eacute;er un compte</a></li>
+        </ul>
+    </div>
+    <div>
+
+        <h3> Top 25 </h3>
+        <ul id="top">
+            {# do something to display 25 first #}
+        {% for usr in usrwin %}
+            <li><p>{{ usr.name }}</p></li>
+        {% endfor %}
+        </ul>
+
+    </div>
+{% endblock %}
+

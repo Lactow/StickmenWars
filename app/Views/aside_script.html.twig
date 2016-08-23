@@ -1,0 +1,12 @@
+{# call this aside for script page #}
+
+{% block aside %}
+    <div>
+        <p>Liens d'aide pour le script</p>
+        <ul>
+            {% for link in linkscripts %}
+            <li><a href="{{ link.href }}">{{link.name}}</a></li>
+        {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
