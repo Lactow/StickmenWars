@@ -65,7 +65,7 @@ if(isset($_GET['link']))
 } else {
     require('./Controllers/HomeController.php');
     $link = new Home();
-}
+} 
 
 if(isset($_GET['a'])) $action = (int)$_GET['a'];
 $link->doAction($action);
