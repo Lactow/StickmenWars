@@ -12,16 +12,30 @@
  *
  * @author lactor
  */
-class Arena {
+class Arena extends Cell{
     private $idArena;
-    public $sizeRoom;
+    public $sizeRoom = "50";
     public $itemMax;
+    public $cells;
+    
+    private function setSizeRoom($value){
+        $this->sizeRoom = $value;
+    }
+    private function getSizeRoom(){
+        return $this->sizeRoom;
+    }
     
     private function createArena(){
         //instanciate arena with id and size;
+        $size = $this->getSizeRoom();
+        
+        for($y=1;$y<=$size;$y++){
+            for($x=1;$x<=$size;$x++){
+                $cell = new Cell($x,$y,$this->idArena);
+                $this->cells[$x][$y] = $cell;
+            }
+        }
     }
     
-    private function deleteArena(){
-        //destroy when : stickmen = 0 || null
-    }
+    
 }
