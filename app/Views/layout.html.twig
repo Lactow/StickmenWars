@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+http://twig.sensiolabs.org/doc/templates.html
+General layout called by index.html. 
+ALL OTHER TEMPLATES WILL BE INCLUDED THERE BUY CONTROLLERS : 
+
+block pour override
+-->
+<html>
+    <head>
+        {% block head %}
+        <title>STICKMAN WARS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% endblock %}
+    </head>
+    <body>
+        <div class="header">
+            {{include 'header.html.twig'}}
+        </div>
+        <div class="nav">
+            {{include 'navbar.html.twig'}}
+        </div>
+        <div class="content">
+            {{include 'gencontent.html.twig'}}
+        </div>
+        <div class='footer'>
+            {{include 'footerView.html'}}
+        </div>
+    </body>
+</html>

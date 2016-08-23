@@ -1,0 +1,10 @@
+{# empty Twig template #}
+<aside>
+    <div class="aside">
+        <ul id="informations">
+        {% for item in news %}
+            <li><a href="{{ item.href }}">{{ item.caption }}</a></li>
+        {% endfor %}
+        </ul>
+    </div>
+</aside>
