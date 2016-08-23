@@ -24,10 +24,6 @@ if(isset($_GET['link']))
 {
     switch($_GET['link'])
     {
-        case '':
-            require('./Controllers/HomeController.php');
-            $link = new Home();
-            break;
         case 'home' :
             require('./Controllers/HomeController.php');
             $link = new Home();
