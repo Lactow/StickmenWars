@@ -60,7 +60,7 @@ CREATE TABLE IF NOT EXISTS `stickman`.`script` (
   `idscript` INT NOT NULL AUTO_INCREMENT,
   `script` VARCHAR(45) NULL,
   `lastupdate` VARCHAR(45) NULL,
-  `isvalide` TINYINT(1) NOT NULL DEFAULT flase,
+  `isvalide` TINYINT(1) NOT NULL DEFAULT false,
   PRIMARY KEY (`idscript`))
 ENGINE = InnoDB;
 
