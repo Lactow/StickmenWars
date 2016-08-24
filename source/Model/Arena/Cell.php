@@ -13,7 +13,7 @@ class Cell {
     private $geoY;
     private $geoX;
     
-    function __construct($x,$y,$idArena) {
+    public function __construct($x,$y,$idArena) {
         $this->creationCell($x,$y);
         $this->setIdArena($idArena);
         $this->randomInstanciateAttribute();

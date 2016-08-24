@@ -13,4 +13,12 @@
  */
 class Weed {
     //put your code here
+    private $idWeed;
+    private $hpRestore;
+    
+    public function __construct($id,$stickHpMax) {
+        $this->idWeed = $id;
+        $this->hpRestore = $stickHpMax;
+    }
+    
 }

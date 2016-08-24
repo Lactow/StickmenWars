@@ -1,0 +1,84 @@
+
+JSON ARRAY RETURNED BY:
+MoveForward()
+{
+	"Position": "X,Y",
+	"Remains": "#turn"
+}
+
+MoveBackward()
+{
+	"Position": "X,Y",
+	"Remains": "#turn"
+}
+
+MoveLeft()
+{
+	"Position": "X,Y",
+	"Remains": "#turn"
+}
+
+MoveRight()
+{
+	"Position": "X,Y",
+	"Remains": "#turn"
+}
+
+View()
+{
+	"Position": "X,Y",
+	"Remains": "#turn",
+	"Object": {
+			"Weapons": {
+					"name": "WEAPONNAME",
+					"Damage": "DAMAGEPOINT"
+				    },
+			"potions": "true|false"
+
+		  },
+	"Stickmen":
+	{
+		"Stickman1":
+		{
+			"name": "stickmanname1",
+			"life": "#life",
+			"isArmed": "true|false"
+		},
+		"Stickman2":
+		{
+			"name": "stickmanname1",
+			"life": "#life",
+			"isArmed": "true|false"
+		}
+	}
+}
+
+Get("name") (if name == "potion", then take the potion)
+{
+	"Position": "X,Y",
+	"Remains": "#turn",
+	"ObjectTaken": "true|false"
+}
+
+Attack("name", useWeapon=true|false)
+{
+	"Stickman1":
+	{
+		"name": "stickmanname1",
+		"life": "#life",
+		"isArmed": "true|false"
+	}
+}
+
+
+
+Defend()
+{
+	"Defended": "true|false"
+}
+
+
+DrugMe()
+{
+	"Drugged": "true|false"
+}
