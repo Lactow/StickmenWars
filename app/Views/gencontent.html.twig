@@ -1,10 +1,17 @@
 {# HOME TPL : first, default
 http://dangoodspeed.com/blog/2015/04/13/a-basic-hello-world-twig-templating-install/
 #}
-<aside>
-    {% block aside %}
-    {% endblock %}
-</aside>
-<div class="container">
-    {% block content %}{% endblock %}
+<div class="container-fluid">
+    <div class="row">
+        <aside class="col-lg-3 col-md3 col-sm-2 col-xs-2">
+            {% block aside %}
+            {% endblock %}
+        </aside>
+        <div class="row col-lg-4 col-md-4 col-sm-4 col-xs-4">
+
+            <div>
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+    </div>
 </div>
