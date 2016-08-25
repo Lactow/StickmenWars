@@ -1,5 +1,8 @@
 RewriteEngine on
 
+#Redirection Url Json
+RewriteRule json.htm$ index.php?link=json&a=1  [L]
+
 #Redirection Url home
 RewriteRule home.htm$ index.php?link=home&a=1  [L]
 

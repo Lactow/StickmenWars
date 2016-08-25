@@ -9,8 +9,8 @@ class cStickman
 	/**
 	 *
 	 */
-	public function __construct()
-	{
+	public function __construct(){
+            
 	}
 
 	/**
@@ -56,33 +56,62 @@ class cStickman
 	/**
 	 * @param void $int x; int y
 	 */
-	public function move($x,$y)
+	public function move($x,$y,$direction)
 	{
 		// TODO: implement here
+            switch($direction){
+                case "left" :
+                    $move['position'][$x.','.$y--];
+                    break;
+                case "right" :
+                    $move['position'][$x.','.$y++];
+                    break;
+                case "up" :
+                    $move['position'][$x++.','.$y];
+                    break;
+                case "down" :
+                    $move['position'][$x--.','.$y];
+                    break;
+                default : 
+                    $move['position'][$x.','.$y];
+                    break;
+            }
+            return $move;
+            
 	}
 
 	/**
 	 *
 	 */
-	public function look()
+	public function look($x,$y)
 	{
-		// TODO: implement here
+            
+            
 	}
 
 	/**
 	 *
 	 */
-	public function protect()
+	public function protect($value = true)
 	{
-		// TODO: implement here
+            if($value == true){
+                return $protect['Defended'] = "true"; 
+            } else {
+                return $protect['Defended'] = "false";
+            }
 	}
 
 	/**
 	 * @param void $int idStickman
 	 */
-	public function attack($idStickman)
+	public function attack($stickmenE,$useWeapon = false)
 	{
-		// TODO: implement here
+            $target = $stickmanE->getLife();
+            if($useWeapon == true){
+                
+            } else {
+                
+            }
 	}
 
 	/**

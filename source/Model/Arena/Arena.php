@@ -14,8 +14,8 @@
  */
 class Arena extends Cell{
     private $idArena;
-    public $sizeRoom = "50";
-    public $itemMax;
+    public $sizeRoom = "24";
+    public $itemMax = "5";
     public $cells;
     
     private function setSizeRoom($value){
@@ -25,7 +25,7 @@ class Arena extends Cell{
         return $this->sizeRoom;
     }
     
-    private function createArena(){
+    public function createArena(){
         //instanciate arena with id and size;
         $size = $this->getSizeRoom();
         
@@ -37,5 +37,21 @@ class Arena extends Cell{
         }
     }
     
+    private function randomItemInArena(){
+        for($i = 1;$i<=$this->itemMax;$i++){
+            $randX = rand(0,$sizeRoom);
+            $randY = rand(0,$sizeRoom);
+            $randItem = rand(0,$maxItem);
+            
+            /*
+             * @TODO function récupération Bdd de l'item
+             */
+            $getItem = '';
+            
+            $this->cells[$randX][$randY]->hasItem = $getItem; 
+            
+            
+        }
+    }
     
 }
