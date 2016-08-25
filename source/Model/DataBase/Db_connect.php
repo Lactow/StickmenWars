@@ -38,9 +38,10 @@ class Db_connect {
         }
     }
     
-    public function DB_Connection(){
-        $mysqli = mysqli_connect($this->host,$this->user,$this->pwd,$this->bdd)  or die ("ERROR : " . mysqli_error($mysqli));
-        mysqli_query($mysqli, 'SET NAMES UTF8');
-        return $mysqli;
+   public function DB_Connection(){
+        $pdo=  new PDO('mysql:host='.$this->host.';dbname='.$this->bdd.';charset=utf8', $this->user, $this->pwd);
+       // $mysqli = mysqli_connect($this->host,$this->user,$this->pwd,$this->bdd)  or die ("ERROR : " . mysqli_error($mysqli));
+     //   mysqli_query($mysqli, 'SET NAMES UTF8');
+        return $pdo;
     }
 }

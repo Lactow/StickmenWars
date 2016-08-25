@@ -7,13 +7,13 @@ class Db_arena {
 
     public function __construct($bd) {
 
-        $this->getBest = $bd->prepare("select * from arena group by idstickmanwinner ASC limit 1");
+        $this->getBest = $bd->prepare("select idaccountwinner,COUNT(idarena) as count from arena group by idaccountwinner ASC LIMIT 1");
         $this->saveArena = $bd->prepare("insert into arena (idstickmanwinner,datecreate)VALUE(:idStick,NOW())");
     }
 
     public function getBest() {
         $this->getBest->execute();
-        return $this->getBest->fetch();
+        return $this->getBest->fetch(PDO::FETCH_ASSOC);
     }
 
     function saveArena($idStick) {
