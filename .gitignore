@@ -1,2 +1,9 @@
 /nbproject/
-!vendor/*
+/vendor/*
+!/vendor/Twig
+!/vendor/css
+!/vendor/doctrine
+!/vendor/ext
+!/vendor/fonts
+!/vendor/js
+!/vendor/
