@@ -2,10 +2,13 @@
 {% extends "gencontent.html" %}
 
 {% block content %}
-    <div class="col-lg-12 col-md-12 col-sm-1é col-xs-12">
+    
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        
         <h3> News du jeu </h3>
         <div class="row">
-
+            
+            <!-- OU ALORS une var content et definie en fonction de controller-->
             {% for item in news %}
 
                 <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6">

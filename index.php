@@ -73,3 +73,31 @@ ob_end_clean();
 include('./Views/ViewContent.php');
 
 
+/*
+ * <?php
+include_once('vendor/Twig/Autoloader.php');
+    Twig_Autoloader::register();
+    
+    $loader = new Twig_Loader_Filesystem('app/Views'); // Dossier contenant les templates
+    $twig = new Twig_Environment($loader, array(
+      'cache' => false
+    ));
+
+$template = $twig->loadTemplate('layout.html.twig');
+echo $template->render(array(
+    'moteur_name' => 'Twig'
+));
+//$asde $cntent = aside template, content templa
+//Defining variables for aside and content tpl 
+//how to say $cntent is on tempalte name ?
+//define routes
+switch($route){
+    case 'default':
+        echo $template->render('default_content.twig');
+        break;
+    case '/login':
+        echo $template->render('login_content.twig');
+        break;
+    
+}
+ */

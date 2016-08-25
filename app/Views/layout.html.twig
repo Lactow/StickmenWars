@@ -8,25 +8,46 @@ block pour override
 -->
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>STICKWARZ</title>
+
+        <link rel="stylesheet" 
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+              integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+              crossorigin="anonymous">
+
+        <!--<link href="./vendor/css/bootstrap.min.css"/>
+        <link href="./vendor/css/bootstrap-theme.min.css"/>
+        <link href="./vendor/css/style-default-display.css"/>
+        <link href="./vendor/css/style.css"/>
+        <link href="./vendor/css/style-user-display.css"/>-->
+
+
         
-        <title>STICKMAN WARS</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-2.2.4.js" 
+                integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" 
+        crossorigin="anonymous"></script>
+        <script type="text/javascript" src="./vendor/js/bootstrap.js"></script>
+        <!--<script type="text/javascript" src="./vendor/js/jquery-3.1.0.min.js"></script>-->
+        
         {% block head %}
         {% endblock %}
     </head>
     <body>
         <div class="header">
-            {{include 'header.html.twig'}}
+            {% include 'header.html.twig' %}
         </div>
         <div class="nav">
-            {{include 'navbar.html.twig'}}
+            {%include 'navbar.html.twig'%}
         </div>
         <div class="content">
-            {{include 'gencontent.html.twig'}}
+            {%include 'gencontent.html.twig'%}
         </div>
         <div class='footer'>
-            {{include 'footerView.html'}}
+            {%include 'footerView.html'%}
         </div>
     </body>
 </html>

@@ -3,15 +3,39 @@ http://dangoodspeed.com/blog/2015/04/13/a-basic-hello-world-twig-templating-inst
 #}
 <div class="container-fluid">
     <div class="row">
-        <aside class="col-lg-3 col-md3 col-sm-2 col-xs-2">
+        <aside class="col-lg-3 col-md3 col-sm-2 col-xs-2" style="float: right;">
             {% block aside %}
+                
+                <h4>Top 25</h4>
+                <p> 25 winners.</p>
+                <div>
+                    foreach user limit 25
+                </div>
+                <div>
+                    foreach user limit 25
+                </div>
+                <div>
+                    foreach user limit 25
+                </div>
+                <div>
+                    foreach user limit 25
+                </div>
             {% endblock %}
         </aside>
-        <div class="row col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
 
-            <div>
-                {% block content %}{% endblock %}
-            </div>
+            <section>
+                {% block content %}
+                    
+                    <p> displaying the 5 first newest articles </p>
+                    <article class="block">
+                        <p>infos</p>
+                    </article>
+                    <article class="block">
+                        <p>infos</p>
+                    </article>
+                {% endblock %}
+            </section>
         </div>
     </div>
 </div>
