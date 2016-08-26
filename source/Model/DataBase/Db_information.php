@@ -16,17 +16,11 @@ class Db_informtion {
 
     function getById($id) {
         $this->getById->execute(array(':id' => $id));
-      //  $this->getByid->setFetchMode(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, 'information');
-        //requete->setFetchMode(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, 'Film', array("ajoutePar", "titre", "uri", "duree", "categorie", "numMedia", "ajouteLe", "dateSortie", "photo", "nbVue", "lastView"));
-
         return $this->getById->fetch(PDO::FETCH_ASSOC);
     }
 
     function getByTitle($title) {
         $this->getByTitle->execute(array(':title' => $title));
-//        $this->getByTitle->setFetchMode(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, 'information');
-        //requete->setFetchMode(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, 'Film', array("ajoutePar", "titre", "uri", "duree", "categorie", "numMedia", "ajouteLe", "dateSortie", "photo", "nbVue", "lastView"));
-
         return $this->getByTitle->fetch(PDO::FETCH_ASSOC);
     }
 

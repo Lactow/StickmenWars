@@ -19,9 +19,6 @@ class Db_item {
 
     public function getById($id) {
         $this->getById->execute(array(':id' => $id));
-        //  $this->getById->setFetchMode(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, 'item');
-        //requete->setFetchMode(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, 'Film', array("ajoutePar", "titre", "uri", "duree", "categorie", "numMedia", "ajouteLe", "dateSortie", "photo", "nbVue", "lastView"));
-
         return $this->getById->fetch();
     }
 
@@ -32,9 +29,6 @@ class Db_item {
 
     public function getAll() {
         $this->getAll->execute();
-       //  $this->getAll->setFetchMode(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, 'item');
-        //requete->setFetchMode(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, 'Film', array("ajoutePar", "titre", "uri", "duree", "categorie", "numMedia", "ajouteLe", "dateSortie", "photo", "nbVue", "lastView"));
-        //$result = $sth->fetchAll(PDO::FETCH_CLASS, "fruit");
         return $this->getAll->fetchAll();
     }
 

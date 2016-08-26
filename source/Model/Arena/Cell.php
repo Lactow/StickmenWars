@@ -1,5 +1,6 @@
 <?php
 
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,7 +11,7 @@ class Cell extends Arena {
 
     private $id;
     private $idArena;
-    private $hasItem;//listitem
+    private $hasItem; //listitem
     private $geoY;
     private $geoX;
 
@@ -21,24 +22,28 @@ class Cell extends Arena {
         $this->idArena = $idArena;
         $this->hasItem = array();
     }
+
 // function
 
-    public function addItem($item){
+    public function addItem(Item $item) {
         array_push($this->hasItem, $item);
     }
-    
-    
-    
-    public function removItem($item){
-        
-        $key = array_search($item, $this->hasItem);// recherche la postion de l'item dans array
-        unset($this->hasItem[$key]);// suprime l'item 
-        $array = array_values($array);// sork
 
+    public function removItem(Item $item) {
+
+        $key = array_search($item, $this->hasItem); // recherche la postion de l'item dans array
+        unset($this->hasItem[$key]); // suprime l'item 
+        $array = array_values($array); // sork
+        //get && set
+    }
+
+    
     //get && set
+    
+    function getHasItem() {
+        return $this->hasItem;
+    }
 
-
- 
 
     
 }
