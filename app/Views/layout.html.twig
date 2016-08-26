@@ -25,29 +25,42 @@ block pour override
         <link href="./vendor/css/style.css"/>
         <link href="./vendor/css/style-user-display.css"/>-->
 
+        <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="stylesheet" href="./vendor/css/main.css" />
+        <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 
         
-        <script src="https://code.jquery.com/jquery-2.2.4.js" 
-                integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" 
-        crossorigin="anonymous"></script>
-        <script type="text/javascript" src="./vendor/js/bootstrap.js"></script>
         <!--<script type="text/javascript" src="./vendor/js/jquery-3.1.0.min.js"></script>-->
-        
+
         {% block head %}
         {% endblock %}
     </head>
     <body>
-        <div class="header">
+        <section id="top" class="one dark cover">
             {% include 'header.html.twig' %}
-        </div>
-        <div class="nav">
+        </section>
+        <nav>
             {%include 'navbar.html.twig'%}
-        </div>
-        <div class="content">
+        </nav>
+        <div id="main">
             {%include 'gencontent.html.twig'%}
         </div>
-        <div class='footer'>
+        <footer>
             {%include 'footerView.html'%}
-        </div>
+        </footer>
+        
+        
+        <script src="./vendor/js/jquery.min.js"></script>
+			<script src="./vendor/js/jquery.scrolly.min.js"></script>
+			<script src="./vendor/js/jquery.scrollzer.min.js"></script>
+			<script src="./vendor/js/skel.min.js"></script>
+			<script src="./vendor/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+        <!--<script src="https://code.jquery.com/jquery-2.2.4.js" 
+                integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" 
+        crossorigin="anonymous"></script>-->
+        <script type="text/javascript" src="./vendor/js/bootstrap.js"></script>
     </body>
 </html>
