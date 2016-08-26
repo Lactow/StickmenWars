@@ -1,6 +1,6 @@
 <?php
 
-class Db_account {
+class Db_account { 
 
     private $getById;
     private $getByName;
