@@ -22,21 +22,28 @@ class StickMan {
     private $damage;
     private $exp;
 
-    public function __construct(array $datas) {
-        $this->hydrate($datas);
+    function __construct($idStickman, $nameStick) {
+        $this->idStickman = $idStickman;
+        $this->nameStick = $nameStick;
     }
 
-    //init other functions
-    public function hydrate(array $datas) {
-        foreach ($datas as $key => $value) {
-            $method = 'set' . ucfirst($key);
 
-            if (method_exists($this, $method)) {
-                $this->$method($value);
-            }
-        }
-    }
-
+    
+//    public function __construct(array $datas) {
+//        $this->hydrate($datas);
+//    }
+//
+//    //init other functions
+//    public function hydrate(array $datas) {
+//        foreach ($datas as $key => $value) {
+//            $method = 'set' . ucfirst($key);
+//
+//            if (method_exists($this, $method)) {
+//                $this->$method($value);
+//            }
+//        }
+//    }
+//  
     //------------------------- GETTERS -------------------------
 
     function getStickman() {

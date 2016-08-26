@@ -1,62 +1,44 @@
 <?php
 
-/* 
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 
-class Cell {
+class Cell extends Arena {
+
     private $id;
     private $idArena;
-    private $hasItem;
+    private $hasItem;//listitem
     private $geoY;
     private $geoX;
-    
-    public function __construct($x,$y,$idArena) {
-        $this->creationCell($x,$y);
-        $this->setIdArena($idArena);
-        $this->hasItem = null;
-    }
-    
-    /*
-     * return GeoX value
-     */
-    public function getGeoX(){
-        return $this->geoX;
-    }
-    /*
-     * set GeoX value
-     */
-    protected function setGeoX($value){
-        $this->geoX = (int) $value;
-    }
-    /*
-     * return geoY value
-     */
-    public function getGeoY(){
-        return $this->geoY;
-    }
-    /*
-     * set GeoY value
-     */
-    protected function setGeoY($value){
-        $this->geoY = (int) $value;
-    }
-    /*
-     * set id Arena
-     */
-    protected function setIdArena($idArena){
+
+    public function __construct($x, $y, $idArena) {
+        $this->geoX = $x;
+        $this->geoY = $y;
+
         $this->idArena = $idArena;
-    }/*
-     * Get hasItem
-     */
-    protected function getHasitem(){
-        return $this->hasItem;
+        $this->hasItem = array();
     }
-    private function creationCell($valueX,$valueY){
-        setGeoY($valueY);
-        setGeoX($valueX);
+// function
+
+    public function addItem($item){
+        array_push($this->hasItem, $item);
     }
+    
+    
+    
+    public function removItem($item){
+        
+        $key = array_search($item, $this->hasItem);// recherche la postion de l'item dans array
+        unset($this->hasItem[$key]);// suprime l'item 
+        $array = array_values($array);// sork
+
+    //get && set
+
+
+ 
+
     
 }

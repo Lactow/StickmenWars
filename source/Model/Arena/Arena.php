@@ -12,46 +12,55 @@
  *
  * @author lactor
  */
-class Arena extends Cell{
+class Arena {
+
     private $idArena;
-    public $sizeRoom = "24";
-    public $itemMax = "5";
-    public $cells;
+    private $sizeRoom = 24;
+    private $itemMax = 5;
+    private $cells;
+
+    function __construct($idArena, $sizeRoom = 24, $itemMax = 5) {
+        $this->idArena = $idArena;
     
-    private function setSizeRoom($value){
-        $this->sizeRoom = $value;
+        $this->sizeRoom = $sizeRoom;
+        $this->itemMax = $itemMax;
     }
-    private function getSizeRoom(){
-        return $this->sizeRoom;
+
+    public function getPosStick() {
+        
     }
-    
-    public function createArena(){
+
+    public function createArena() {
         //instanciate arena with id and size;
         $size = $this->getSizeRoom();
-        
-        for($y=1;$y<=$size;$y++){
-            for($x=1;$x<=$size;$x++){
-                $cell = new Cell($x,$y,$this->idArena);
+
+        for ($y = 1; $y <= $size; $y++) {
+            for ($x = 1; $x <= $size; $x++) {
+                $cell = new Cell($x, $y, $this->idArena);
                 $this->cells[$x][$y] = $cell;
             }
         }
     }
-    
-    private function randomItemInArena(){
-        for($i = 1;$i<=$this->itemMax;$i++){
-            $randX = rand(0,$sizeRoom);
-            $randY = rand(0,$sizeRoom);
-            $randItem = rand(0,$maxItem);
-            
-            /*
-             * @TODO function récupération Bdd de l'item
-             */
-            $getItem = '';
-            
-            $this->cells[$randX][$randY]->hasItem = $getItem; 
-            
-            
+
+    public function createItemInArena($lesItem) {
+        for ($i = 1; $i <= $this->itemMax; $i++) {
+            $randX = rand(0, $this->sizeRoom);
+            $randY = rand(0, $this->sizeRoom);
+            $randItem = rand(0, $this->itemMax);
+
+            $this->cells[$randX][$randY]->
+                    $this->cells[$randX][$randY]->hasItem = $getItem;
         }
     }
-    
+
+    // get && set
+
+    public function getSizeRoom() {
+        return $this->sizeRoom;
+    }
+
+    function getCells() {
+        return $this->cells;
+    }
+
 }
