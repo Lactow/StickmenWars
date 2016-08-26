@@ -1,5 +1,5 @@
 <?php
-
+/*
 session_start();
 ob_start();
 
@@ -71,10 +71,8 @@ ob_end_clean();
 
 //$contentPage display page
 include('./Views/ViewContent.php');
+*/
 
-
-/*
- * <?php
 include_once('vendor/Twig/Autoloader.php');
     Twig_Autoloader::register();
     
@@ -87,17 +85,5 @@ $template = $twig->loadTemplate('layout.html.twig');
 echo $template->render(array(
     'moteur_name' => 'Twig'
 ));
-//$asde $cntent = aside template, content templa
-//Defining variables for aside and content tpl 
-//how to say $cntent is on tempalte name ?
-//define routes
-switch($route){
-    case 'default':
-        echo $template->render('default_content.twig');
-        break;
-    case '/login':
-        echo $template->render('login_content.twig');
-        break;
-    
-}
- */
+
+ 

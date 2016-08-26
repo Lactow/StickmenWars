@@ -1,10 +1,11 @@
 {# empty Twig template #}
 <nav class="navbar navbar-default">
   <div class="container-fluid">
-   <ul class="nav navbar-nav">
-      <li><a href="script.htm">Script</a></li>
-      <li><a href="shop.htm">Shop</a></li>
-      <li><a id="launchGame" href="fight.htm">Lancer le jeu</a></li>
+   <ul class="nav navbar-nav" id="navigation">
+             <li><a href="{{ path('home') }}">Accueil</a></li>
+             <li><a href="{{ path('content_battle') }}">Lancer le jeu</a></li>
+             <li><a href="{{ path('content_script') }}">Scripter</a></li>
+             <li><a href="{{ path('content_shop') }}">Shop</a></li>
     </ul>
   </div>
 </nav>
